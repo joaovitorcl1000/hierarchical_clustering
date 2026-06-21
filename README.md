@@ -52,12 +52,15 @@ Devido ao seu alto custo computacional, o Agrupamento Hierárquico brilha em con
 
 Suponha que tenhamos um conjunto de dados com $d$ amostras, no qual cada amostra possui $N$ características (dimensões). Podemos representar esse conjunto de dados como:
 
-$$X = \begin{pmatrix} \vec{x}_1 \\ \vec{x}_2 \\ \vdots \\ \vec{x}_d \end{pmatrix} = \begin{pmatrix}
+$$
+X = \begin{pmatrix} \vec{x}_1 & \vec{x}_2 & ... & \vec{x}_d \end{pmatrix}^T = \begin{pmatrix}
 \lambda_1^{(1)} & \lambda_2^{(1)} & \dots & \lambda_N^{(1)} \\
 \lambda_1^{(2)} & \lambda_2^{(2)} & \dots & \lambda_N^{(2)} \\
 \vdots & \vdots & \ddots & \vdots \\
 \lambda_1^{(d)} & \lambda_2^{(d)} & \dots & \lambda_N^{(d)}
-\end{pmatrix},$$
+\end{pmatrix}
+$$
+
 no qual cada dado $\vec{x}_i$​ é um vetor de características em um espaço multidimensional:
 
 $$\vec{x}_i ​= (\lambda_1^{(i)}​, \lambda_2^{(i)}​,... , \lambda_N^{(i)}​) \in \mathbb{R}^N.$$
